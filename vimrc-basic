@@ -1,12 +1,7 @@
 " My currently working version Vimrc
 " I kept all other settings in plugins/settings directory
 "
-
-" Pathogen load
-filetype off
-
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -19,7 +14,5 @@ noremap <CR> :nohlsearch<CR>
 map <C-A> ggVG
 
 set background=dark
-colorscheme Tomorrow-Night
-
-nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
+colorscheme solarized
 

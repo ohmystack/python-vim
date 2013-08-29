@@ -40,10 +40,10 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 set t_Co=256
-try
-  colorscheme railscasts
-catch
-endtry
+" try
+"  colorscheme railscasts
+"catch
+"endtry
 
 set nobackup                          " no *~ backup files
 set noswapfile
@@ -113,3 +113,58 @@ cnoremap %% <C-R>=expand('%:h').'/'<CR>
 " quick open vimrc in a new tab
 nmap <leader>v :tabe $MYVIMRC<CR>
 map <leader>0 :topleft 100 :split README.md<CR>
+
+" switch between splited windows
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+map <c-k> <c-w>k
+map <c-j> <c-w>j
+imap <c-l> <ESC><c-w>l
+imap <c-h> <ESC><c-w>h
+imap <c-k> <ESC><c-w>k
+imap <c-j> <ESC><c-w>j
+
+let g:jedi#rename_command = "<leader>rn"
+
+
+" ====================
+" Python-mode settings
+
+" Load show documentation plugin, 0=off 1=on
+let g:pymode_doc = 0
+" Disable Folding function from py-mode, use my own Folding configuration in Settings.vim
+"let g:pymode_folding = 0
+
+" pyflakes
+"autocmd FileType python map <buffer> <c-F7> :call Flake8()<CR>
+
+" Unload run code plugin
+let g:pymode_run = 0
+
+" Key for run python code
+"let g:pymode_run_key = '<leader>r'
+
+" Load breakpoints plugin
+let g:pymode_breakpoint = 1
+
+" Key for set/unset breakpoint
+let g:pymode_breakpoint_key = '<leader>B'
+
+" rope
+" disable rope in python-mode
+let g:pymode_rope = 0
+" set up ropevim installed by myself
+let g:ropevim_enable_autoimport=1
+" add the name of modules you want to autoimport
+let g:ropevim_autoimport_modules = ["os", "django"]
+
+" ====================
+" fix Dbg's bug, cannot run code
+map <leader>r :Dbg run<CR>
+
+" ====================
+" Change some Conque key binding
+let g:ConqueTerm_SendFileKey = '<c-F10>'
+let g:ConqueTerm_SendVisKey = '<c-F9>'
+let g:ConqueTerm_ExecFileKey = '<c-F11>'
+
