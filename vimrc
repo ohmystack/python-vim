@@ -5,6 +5,9 @@
 " Pathogen load
 filetype off
 
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ['snipmate']
+
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
@@ -19,7 +22,9 @@ noremap <CR> :nohlsearch<CR>
 map <C-A> ggVG
 
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 
+" Add external paths into ctags
+set tags+=/opt/stack/horizon/.venv/lib/python2.7/site-packages/tags
