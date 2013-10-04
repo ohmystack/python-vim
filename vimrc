@@ -15,6 +15,19 @@ filetype plugin indent on
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
+" special for different OS
+if has('win32')
+  " settings for win32
+elseif has('unix')
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " settings for MacOSX
+    python import sys; sys.path.append("/Library/Python/2.7/site-packages")
+  else
+    " settings for linux
+  endif
+endif
+
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 
