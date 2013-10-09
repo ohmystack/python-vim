@@ -35,7 +35,7 @@ noremap <CR> :nohlsearch<CR>
 map <C-A> ggVG
 
 set background=dark
-colorscheme Tomorrow
+colorscheme Tomorrow-Night
 
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 

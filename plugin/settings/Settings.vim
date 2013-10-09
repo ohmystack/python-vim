@@ -163,12 +163,18 @@ let g:ropevim_enable_autoimport=1
 let g:ropevim_autoimport_modules = ["os", "django"]
 
 " ====================
+" Dbg
 " fix Dbg's bug, cannot run code
 map <leader>r :Dbg run<CR>
 
 " ====================
-" Change some Conque key binding
+" Conque
+" Change some key bindings
 let g:ConqueTerm_SendFileKey = '<c-F10>'
 let g:ConqueTerm_SendVisKey = '<c-F9>'
 let g:ConqueTerm_ExecFileKey = '<c-F11>'
 
+" ====================
+" Markdown-vim
+" disable its auto folding
+let g:vim_markdown_folding_disabled=1
