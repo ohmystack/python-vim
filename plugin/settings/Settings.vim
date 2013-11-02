@@ -179,3 +179,7 @@ let g:ConqueTerm_ExecFileKey = '<c-F11>'
 " Markdown-vim
 " disable its auto folding
 let g:vim_markdown_folding_disabled=1
+
+" ====================
+" BufExplore
+map <F3> :BufExplorer<CR>
