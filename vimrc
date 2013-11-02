@@ -41,3 +41,4 @@ nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 
 " Add external paths into ctags
 set tags+=/opt/stack/horizon/.venv/lib/python2.7/site-packages/tags
+

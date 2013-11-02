@@ -134,7 +134,7 @@ let g:jedi#rename_command = "<leader>rn"
 let g:pymode_doc = 0
 
 " disable pep8 from checker
-let g:pymode_lint_checker = "pyflakes,mccabe"
+let g:pymode_lint_checker = "pylint"
 
 " Disable Folding function from py-mode, use my own Folding configuration in Settings.vim
 "let g:pymode_folding = 0
