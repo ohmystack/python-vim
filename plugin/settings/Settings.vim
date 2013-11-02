@@ -152,7 +152,8 @@ let g:pymode_run = 0
 let g:pymode_breakpoint = 1
 
 " Key for set/unset breakpoint
-let g:pymode_breakpoint_key = '<leader>B'
+let g:pymode_breakpoint_key = '<leader>b'
+let g:pymode_breakpoint_cmd = "import ipdb;ipdb.set_trace() # Set breakpoint_by_jiang"
 
 " rope
 " disable rope in python-mode
