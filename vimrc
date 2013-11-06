@@ -34,8 +34,8 @@ noremap <CR> :nohlsearch<CR>
 " select ALL
 map <C-A> ggVG
 
-set background=dark
-colorscheme Tomorrow-Night
+"set background=dark
+colorscheme FreshCut
 
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 
