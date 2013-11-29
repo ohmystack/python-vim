@@ -1,4 +1,4 @@
 .netrwhist
 .DS_Store
-.pyc
+*.pyc
 tags/*
