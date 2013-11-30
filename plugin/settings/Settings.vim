@@ -89,7 +89,7 @@ autocmd WinLeave * setlocal nocursorline
 "  custom key and plugin configurations
 " ======================================
 " remove tailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 " comment
 map <Leader><Leader> <Leader>c<space>
