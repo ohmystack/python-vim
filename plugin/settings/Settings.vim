@@ -139,6 +139,9 @@ let g:pymode_lint_checker = "pylint"
 " Disable Folding function from py-mode, use my own Folding configuration in Settings.vim
 "let g:pymode_folding = 0
 
+" Disable auto-remove unused whitespaces.
+let g:pymode_utils_whitespaces = 0
+
 " pyflakes
 "autocmd FileType python map <buffer> <c-F7> :call Flake8()<CR>
 
