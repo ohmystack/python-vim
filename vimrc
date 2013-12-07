@@ -34,7 +34,7 @@ noremap <CR> :nohlsearch<CR>
 " select ALL
 map <C-A> ggVG
 
-"set background=dark
+set background=dark
 colorscheme FreshCut
 
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
@@ -42,3 +42,4 @@ nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 " Add external paths into ctags
 set tags+=/opt/stack/horizon/.venv/lib/python2.7/site-packages/tags
 
+set t_Co=256
