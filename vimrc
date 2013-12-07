@@ -34,8 +34,9 @@ noremap <CR> :nohlsearch<CR>
 " select ALL
 map <C-A> ggVG
 
+let g:solarized_termcolors=256
 set background=dark
-colorscheme FreshCut
+colorscheme solarized
 
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 
