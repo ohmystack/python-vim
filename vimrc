@@ -104,3 +104,6 @@ let g:vim_markdown_folding_disabled=1
 " ====================
 " BufExplore
 map <F3> :BufExplorer<CR>
+
+" Disable beep and flash
+set noeb vb t_vb=
