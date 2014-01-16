@@ -43,7 +43,7 @@ set tags+=/opt/stack/horizon/.venv/lib/python2.7/site-packages/tags
 let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 "set background=light
-colorscheme FreshCut
+colorscheme zenburn
 
 " ====================
 " Python-mode settings
