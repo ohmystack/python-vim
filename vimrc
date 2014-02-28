@@ -44,11 +44,8 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 set t_Co=256
-" try
-"  colorscheme railscasts
-"catch
-"endtry
 let g:Powerline_symbols = "fancy"
+set encoding=utf-8
 
 " Colorscheme settings
 let g:solarized_termcolors=256
