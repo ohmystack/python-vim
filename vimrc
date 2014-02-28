@@ -39,6 +39,17 @@ nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 " Add external paths into ctags
 set tags+=/usr/local/lib/python2.7/dist-packages/tags
 
+syntax on                             " syntax highlight
+set hlsearch                          " search highlighting
+set incsearch                         " incremental search
+syntax enable
+set t_Co=256
+" try
+"  colorscheme railscasts
+"catch
+"endtry
+let g:Powerline_symbols = "fancy"
+
 " Colorscheme settings
 let g:solarized_termcolors=256
 "let g:solarized_termtrans=1

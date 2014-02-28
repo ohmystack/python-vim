@@ -35,16 +35,6 @@ filetype on                           " enable filetype detection
 filetype indent on                    " enable filetype-specific indenting
 filetype plugin on                    " enable filetype-specific plugins
 
-syntax on                             " syntax highlight
-set hlsearch                          " search highlighting
-set incsearch                         " incremental search
-syntax enable
-set t_Co=256
-" try
-"  colorscheme railscasts
-"catch
-"endtry
-
 set nobackup                          " no *~ backup files
 set noswapfile
 set nowritebackup
