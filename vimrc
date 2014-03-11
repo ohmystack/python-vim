@@ -10,8 +10,9 @@ let g:pathogen_disabled = ['snipmate', 'pyflakes-vim']
 
 call pathogen#infect()
 call pathogen#helptags()
-syntax enable
+
 filetype plugin indent on
+syntax on
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
@@ -39,7 +40,6 @@ nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 " Add external paths into ctags
 set tags+=/usr/local/lib/python2.7/dist-packages/tags
 
-syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
