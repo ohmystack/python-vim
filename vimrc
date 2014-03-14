@@ -117,3 +117,16 @@ map <F3> :BufExplorer<CR>
 
 " Disable beep and flash
 set noeb vb t_vb=
+
+" ====================
+" Toggle the :Errors (quickfix) window
+" Map to <leader>e
+function! ToggleErrors()
+    if empty(filter(tabpagebuflist(), 'getbufvar(v:val, "&buftype") is# "quickfix"'))
+        " No location/quickfix list shown, open syntastic error location panel
+        Errors
+    else
+        lclose
+    endif
+endfunction
+nnoremap <silent> <leader>e :<C-u>call ToggleErrors()<CR>
