@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -133,3 +133,7 @@ function! ToggleErrors()
     endif
 endfunction
 nnoremap <silent> <leader>e :<C-u>call ToggleErrors()<CR>
+
+" ====================
+" Tagbar
+nmap <F4> :TagbarToggle<CR>
