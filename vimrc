@@ -30,7 +30,7 @@ elseif has('unix')
 endif
 
 " hit enter to cancel searched highlight
-noremap <CR> :nohlsearch<CR>
+nnoremap <CR> :nohlsearch<CR>
 
 " select ALL
 map <C-A> ggVG
@@ -59,6 +59,8 @@ colorscheme zenburn
 " Load show documentation plugin, 0=off 1=on
 let g:pymode_doc = 0
 
+" Turn off pymode-pylint
+let g:pymode_lint = 0
 " disable pep8 from checker
 let g:pymode_lint_checker = "pylint"
 
@@ -93,9 +95,9 @@ let g:ropevim_enable_autoimport=1
 let g:ropevim_autoimport_modules = ["os", "django"]
 
 " ====================
-" Dbg
-" fix Dbg's bug, cannot run code
-map <leader>r :Dbg run<CR>
+" Syntastic
+" When set to 1 the cursor will always jump to the first issue detected.
+let g:syntastic_auto_loc_list = 1
 
 " ====================
 " Conque
