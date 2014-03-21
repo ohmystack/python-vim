@@ -34,6 +34,7 @@ nnoremap <CR> :nohlsearch<CR>
 " If there is a new window opened by QuickFix, 
 " restore the original <CR> behavior in that buffer.
 autocmd BufWinEnter \[Location List\] nnoremap <buffer> <CR> <CR>
+autocmd BufWinEnter \[Quickfix List\] nnoremap <buffer> <CR> <CR>
 
 " select ALL
 map <C-A> ggVG
@@ -100,7 +101,7 @@ let g:ropevim_autoimport_modules = ["os", "django"]
 " ====================
 " Syntastic
 " When set to 1 the cursor will always jump to the first issue detected.
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 
 " ====================
 " Conque
