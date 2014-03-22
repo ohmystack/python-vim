@@ -276,7 +276,7 @@ if &t_Co > 255
     " Function -- function name, and where using them
     hi Function        ctermfg=045
     " Identifier -- self.
-    hi Identifier      ctermfg=037
+    hi Identifier      ctermfg=031
     hi IncSearch       ctermbg=230   ctermfg=208
     hi Keyword         ctermfg=223   cterm=bold
     hi Label           ctermfg=187   cterm=underline
@@ -578,6 +578,10 @@ endif
 if &t_Co > 255
     " pythonInclude -- from, import
     hi pythonInclude   ctermfg=171   cterm=bold
+    " pythonStatement -- with, as, yield, pass, return, ...
+    hi pythonStatement ctermfg=214   cterm=bold
+    " pythonLambdaExpr -- lambda
+    hi pythonLambdaExpr ctermfg=214   cterm=bold
     " pythonOperator -- and in is not or
     hi pythonOperator  ctermfg=215   cterm=bold
     " pythonExtraOperator -- =, |, *, **
