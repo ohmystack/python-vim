@@ -254,12 +254,15 @@ hi SpellLocal guisp=#7cac7c guifg=#9ccc9c
 if &t_Co > 255
     hi Boolean         ctermfg=181
     hi Character       ctermfg=181   cterm=bold
-    hi Comment         ctermfg=108
-    hi Conditional     ctermfg=223   cterm=bold
+    " Comment -- #...
+    hi Comment         ctermfg=106
+    " Conditional -- if
+    hi Conditional     ctermfg=214   cterm=bold
     hi Constant        ctermfg=181   cterm=bold
     hi Cursor          ctermfg=233   ctermbg=109     cterm=bold
     hi Debug           ctermfg=181   cterm=bold
-    hi Define          ctermfg=223   cterm=bold
+    hi Define          ctermfg=063   cterm=bold
+    " Delimiter -- (, )
     hi Delimiter       ctermfg=245
     hi DiffAdd         ctermfg=66    ctermbg=237     cterm=bold
     hi DiffChange      ctermbg=236
@@ -267,50 +270,59 @@ if &t_Co > 255
     hi DiffText        ctermfg=217   ctermbg=237     cterm=bold
     hi Directory       ctermfg=109   cterm=bold
     hi ErrorMsg        ctermfg=115   ctermbg=236     cterm=bold
-    hi Exception       ctermfg=249   cterm=bold
+    " Exception -- try, catch / except
+    hi Exception       ctermfg=216   cterm=bold
     hi Float           ctermfg=251
-    hi Function        ctermfg=228
-    hi Identifier      ctermfg=223
+    " Function -- function name, and where using them
+    hi Function        ctermfg=045
+    " Identifier -- self.
+    hi Identifier      ctermfg=037
     hi IncSearch       ctermbg=230   ctermfg=208
     hi Keyword         ctermfg=223   cterm=bold
     hi Label           ctermfg=187   cterm=underline
+    " LineNr -- Line number column
     hi LineNr          ctermfg=248   ctermbg=233
     hi Macro           ctermfg=223   cterm=bold
     hi ModeMsg         ctermfg=223   cterm=none
     hi MoreMsg         ctermfg=15    cterm=bold
     hi Number          ctermfg=116
-    hi Operator        ctermfg=230
+    " Operator -- sizeof, +, *, in, is
+    hi Operator        ctermfg=215
     hi PreCondit       ctermfg=180   cterm=bold
     hi PreProc         ctermfg=223   cterm=bold
     hi Question        ctermfg=15    cterm=bold
-    hi Repeat          ctermfg=223   cterm=bold
+    " Repeat -- for
+    hi Repeat          ctermfg=214   cterm=bold
     hi Search          ctermfg=230   ctermbg=230
     hi SpecialChar     ctermfg=181   cterm=bold
-    hi SpecialComment  ctermfg=108   cterm=bold
+    hi SpecialComment  ctermfg=112   cterm=bold
     hi Special         ctermfg=181
     hi SpecialKey      ctermfg=151
-    hi Statement       ctermfg=187   ctermbg=234     cterm=none
+    " statement -- def, if/else 's backgroud
+    hi Statement       ctermfg=230   ctermbg=235     cterm=bold
     hi StatusLine      ctermfg=236   ctermbg=186
-    hi StatusLineNC    ctermfg=235   ctermbg=108
+    hi StatusLineNC    ctermfg=237   ctermbg=108
     hi StorageClass    ctermfg=249   cterm=bold
-    hi String          ctermfg=174
+    " String -- "xxx"
+    hi String          ctermfg=222
     hi Structure       ctermfg=229   cterm=bold
     hi Tag             ctermfg=181   cterm=bold
     hi Title           ctermfg=7     ctermbg=234     cterm=bold
     hi Todo            ctermfg=108   ctermbg=234     cterm=bold
     hi Typedef         ctermfg=253   cterm=bold
-    hi Type            ctermfg=187   cterm=bold
+    " Type -- classname, and many other places!
+    hi Type            ctermfg=081   cterm=bold
     hi Underlined      ctermfg=188   ctermbg=234     cterm=bold
     hi VertSplit       ctermfg=236   ctermbg=236
     hi VisualNOS       ctermfg=236   ctermbg=210     cterm=bold
     hi WarningMsg      ctermfg=15    ctermbg=236     cterm=bold
     hi WildMenu        ctermbg=236   ctermfg=194     cterm=bold
 
-    " spellchecking, always "bright" background
-    hi SpellLocal ctermfg=14  ctermbg=237
-    hi SpellBad   ctermfg=9   ctermbg=237
-    hi SpellCap   ctermfg=12  ctermbg=237
-    hi SpellRare  ctermfg=13  ctermbg=237
+    " spellchecking
+    hi SpellLocal ctermfg=14  ctermbg=235
+    hi SpellBad   ctermfg=9   ctermbg=235
+    hi SpellCap   ctermfg=12  ctermbg=235
+    hi SpellRare  ctermfg=13  ctermbg=235
 
     " pmenu
     hi PMenu      ctermfg=248  ctermbg=0
@@ -333,16 +345,17 @@ if &t_Co > 255
             hi CursorColumn      ctermbg=235   cterm=none
         endif
     else
-        hi Normal ctermfg=188 ctermbg=237
+        hi Normal ctermfg=188 ctermbg=235
         hi Cursor          ctermbg=109
         hi diffadd         ctermbg=237
         hi diffdelete      ctermbg=238
         hi difftext        ctermbg=237
-        hi errormsg        ctermbg=237
+        hi errormsg        ctermbg=235
         hi incsearch       ctermbg=230
-        hi linenr          ctermbg=235
+        hi linenr          ctermbg=237
         hi search          ctermbg=214
-        hi statement       ctermbg=237
+        " statement -- if / else
+        hi statement       ctermbg=235
         hi statusline      ctermbg=144
         hi statuslinenc    ctermbg=108
         hi title           ctermbg=237
@@ -362,9 +375,9 @@ if &t_Co > 255
         hi CursorLine      ctermbg=238   cterm=none
 
         if exists("g:zenburn_unified_CursorColumn") && g:zenburn_unified_CursorColumn
-            hi CursorColumn      ctermbg=238   cterm=none
+            hi CursorColumn      ctermbg=237   cterm=none
         else
-            hi CursorColumn      ctermbg=239   cterm=none
+            hi CursorColumn      ctermbg=238   cterm=none
         endif
     endif
 
@@ -413,7 +426,7 @@ else
     if exists("g:zenburn_unified_CursorColumn") && g:zenburn_unified_CursorColumn
         hi CursorColumn    guibg=#434343
     else
-        hi CursorColumn    guibg=#4f4f4f
+        hi CursorColumn    guibg=#383838
     endif
     hi Pmenu           guibg=#2c2e2e guifg=#9f9f9f
     hi PMenuSel        guibg=#242424 guifg=#d0d0a0 gui=bold
@@ -459,7 +472,7 @@ else
         hi VisualNOS     guibg=#2f2f2f
 
         if &t_Co > 255
-            hi Visual    ctermbg=235
+            hi Visual    ctermbg=240
             hi VisualNOS ctermbg=235
         endif
     endif
@@ -516,8 +529,8 @@ else
     if &t_Co > 255
         hi FoldColumn    ctermbg=236 ctermfg=109
         hi Folded        ctermbg=236 ctermfg=109
-        hi TabLine       ctermbg=235 ctermfg=187 cterm=none
-        hi TabLineSel    ctermbg=236 ctermfg=229 cterm=bold
+        hi TabLine       ctermbg=233 ctermfg=187 cterm=none
+        hi TabLineSel    ctermbg=239 ctermfg=229 cterm=bold
         hi TabLineFill   ctermbg=233 ctermfg=233
     endif
 endif
@@ -559,3 +572,16 @@ endif
 
 " TODO check for more obscure syntax groups that they're ok
 
+" SPECIFIC LANGUAGES
+"
+" Special highlight for python-mode
+if &t_Co > 255
+    " pythonInclude -- from, import
+    hi pythonInclude   ctermfg=171   cterm=bold
+    " pythonOperator -- and in is not or
+    hi pythonOperator  ctermfg=215   cterm=bold
+    " pythonExtraOperator -- =, |, *, **
+    hi pythonExtraOperator  ctermfg=037   cterm=bold
+    " pythonDecorator -- only the @
+    hi pythonDecorator  ctermfg=037
+endif
