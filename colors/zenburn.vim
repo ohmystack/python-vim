@@ -274,7 +274,7 @@ if &t_Co > 255
     hi Exception       ctermfg=216   cterm=bold
     hi Float           ctermfg=251
     " Function -- function name, and where using them
-    hi Function        ctermfg=045
+    hi Function        ctermfg=080
     " Identifier -- self.
     hi Identifier      ctermfg=031
     hi IncSearch       ctermbg=230   ctermfg=208
