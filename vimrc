@@ -103,7 +103,7 @@ let g:ropevim_autoimport_modules = ["os", "django"]
 " When set to 1 the cursor will always jump to the first issue detected.
 let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
-let g:syntastic_python_checkers = ['pep8']
+let g:syntastic_python_checkers = ['pep8', 'flake8']
 
 " ====================
 " Conque
