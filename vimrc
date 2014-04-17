@@ -106,11 +106,12 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_python_checkers = ['pep8', 'flake8']
 
 " ====================
-" Conque
+" ConqueTerm
 " Change some key bindings
 let g:ConqueTerm_SendFileKey = '<c-F10>'
 let g:ConqueTerm_SendVisKey = '<c-F9>'
 let g:ConqueTerm_ExecFileKey = '<c-F11>'
+let g:ConqueTerm_ToggleKey = '<c-F8>'
 
 " ====================
 " Markdown-vim
