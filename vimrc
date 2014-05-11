@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -48,8 +48,11 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 set t_Co=256
-let g:Powerline_symbols = "fancy"
 set encoding=utf-8
+
+" Airline & Powerline settings
+let g:airline_powerline_fonts = 1
+"let g:Powerline_symbols = "fancy"
 
 " Colorscheme settings
 let g:solarized_termcolors=256
