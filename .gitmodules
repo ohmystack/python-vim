@@ -25,3 +25,6 @@
 [submodule "bundle/salt-vim"]
 	path = bundle/salt-vim
 	url = https://github.com/saltstack/salt-vim.git
+[submodule "bundle/vim-jinja2"]
+	path = bundle/vim-jinja2
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
