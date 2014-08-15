@@ -28,3 +28,9 @@
 [submodule "bundle/vim-jinja2"]
 	path = bundle/vim-jinja2
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
