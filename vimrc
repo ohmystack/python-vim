@@ -106,7 +106,15 @@ let g:ropevim_autoimport_modules = ["os", "django"]
 " When set to 1 the cursor will always jump to the first issue detected.
 let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
-let g:syntastic_python_checkers = ['pep8', 'flake8']
+let g:syntastic_python_checkers = ['pep8', 'pyflakes']
+" let g:syntastic_python_flake8_args = '--ignore="E501,E302,E261,E701,E241,E126,E127,E128,W801"'
+"
+" Use jshint (uses ~/.jshintrc)
+" let g:syntastic_javascript_checkers = ['jshint']
+
+" Better :sign interface symbols
+" let g:syntastic_error_symbol = '✗'
+" let g:syntastic_warning_symbol = '!'
 
 " ====================
 " ConqueTerm
