@@ -152,3 +152,11 @@ nnoremap <silent> <leader>e :<C-u>call ToggleErrors()<CR>
 " ====================
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
+
+" ====================
+" vim-gitgutter
+" Turn off vim-gitgutter by default
+let g:gitgutter_enabled = 0
+" To disable all key mappings
+let g:gitgutter_map_keys = 0
+nmap <leader>] :GitGutterToggle<CR>
