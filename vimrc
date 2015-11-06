@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim']
 
 call pathogen#infect()
 call pathogen#helptags()
