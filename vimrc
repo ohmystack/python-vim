@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'you-complete-me']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -58,7 +58,7 @@ let g:airline_powerline_fonts = 1
 let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 "set background=light
-colorscheme zenburn
+colorscheme zenburn-colorful
 
 " ====================
 " Python-mode settings
