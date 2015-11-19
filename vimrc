@@ -20,6 +20,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 if has('win32')
   " settings for win32
 elseif has('unix')
+  let shell='/bin/bash'
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     " settings for MacOSX
@@ -153,6 +154,34 @@ nnoremap <silent> <leader>e :<C-u>call ToggleErrors()<CR>
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
 
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+    \ }
+
 " ====================
 " vim-gitgutter
 " Turn off vim-gitgutter by default
@@ -162,7 +191,18 @@ let g:gitgutter_map_keys = 0
 nmap <leader>] :GitGutterToggle<CR>
 
 " ====================
+" Folding settings
+set foldmethod=syntax
+set foldnestmax=1       "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=0
+
+" ====================
 " vim-go
+let g:go_autodetect_gopath = 1
+let g:go_auto_type_info = 1
+let g:godef_split = 2
+
 let g:go_highlight_functions = 1
 "let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -170,8 +210,20 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
+"au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <Leader>s <Plug>(go-implements)
 au FileType go nmap <Leader>i <Plug>(go-info)
+
+" ====================
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
+
+" ====================
+" you-complete-me
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
