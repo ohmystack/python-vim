@@ -48,8 +48,10 @@ set tags+=/usr/local/lib/python2.7/dist-packages/tags
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
+set synmaxcol=250                     " give up syntax highlighting after that col
 set t_Co=256
 set encoding=utf-8
+set lazyredraw
 
 " Airline & Powerline settings
 let g:airline_powerline_fonts = 1
