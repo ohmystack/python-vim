@@ -237,3 +237,14 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 " nerdcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+
+" ====================
+" Bash settings
+" use tab for indentation
+" http://vim.wikia.com/wiki/Indent_with_tabs,_align_with_spaces
+au FileType sh set noexpandtab  
+
+" a Tab2Space and a Space2Tab command that convert leading whitespace
+" http://vim.wikia.com/wiki/VimTip1592
+command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
+command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
