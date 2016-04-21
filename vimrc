@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'jedi-vim']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'jedi-vim', 'jshint']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -248,3 +248,7 @@ au FileType sh set noexpandtab
 " http://vim.wikia.com/wiki/VimTip1592
 command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
 command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
+
+" ====================
+" jshint
+let g:JSHintHighlightErrorLine = 0  " disable error highlighting
