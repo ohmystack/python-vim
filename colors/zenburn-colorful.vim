@@ -583,7 +583,7 @@ endif
 " Special highlight for python-mode
 if &t_Co > 255
     " pythonInclude -- from, import
-    hi pythonInclude   ctermfg=171   cterm=bold
+    hi pythonInclude   ctermfg=165   cterm=bold
     " pythonStatement -- with, as, yield, pass, return, ...
     hi pythonStatement ctermfg=214   cterm=bold
     " pythonLambdaExpr -- lambda
