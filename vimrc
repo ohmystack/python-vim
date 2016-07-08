@@ -110,8 +110,11 @@ let g:ropevim_autoimport_modules = ["os", "django"]
 let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args = '--ignore="E501,E302,E261,E701,E241,E126,E127,E128,W801"'
-"
+" Warning / Error codes: https://pypi.python.org/pypi/flake8/1.2
+" NOTE: Ignore E111 & E114 & E501 is for TensorFlow, who uses only 2 spaces for indentation.
+"       Remove these later.
+let g:syntastic_python_flake8_args = '--ignore="E111,E114,E501"'
+
 " Use jshint (uses ~/.jshintrc)
 " let g:syntastic_javascript_checkers = ['jshint']
 
