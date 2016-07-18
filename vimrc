@@ -55,6 +55,7 @@ set lazyredraw
 " Airline & Powerline settings
 let g:airline_powerline_fonts = 1
 "let g:Powerline_symbols = "fancy"
+let g:airline_theme="ohmystack"
 
 " Colorscheme settings
 let g:solarized_termcolors=256
