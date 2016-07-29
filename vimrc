@@ -122,6 +122,9 @@ let g:syntastic_python_flake8_args = '--ignore="E111,E114,E501"'
 " let g:syntastic_error_symbol = '✗'
 " let g:syntastic_warning_symbol = '!'
 
+" Syntastic for Go
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+
 " ====================
 " ConqueTerm
 " Change some key bindings
