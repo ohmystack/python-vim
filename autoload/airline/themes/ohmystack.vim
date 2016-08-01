@@ -40,7 +40,7 @@ let g:airline#themes#ohmystack#palette.normal = airline#themes#generate_color_ma
 " applied after g:airline#themes#ohmystack#palette.normal, hence why only certain keys are
 " declared.
 let g:airline#themes#ohmystack#palette.normal_modified = {
-      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255 , 53 , '' ] ,
+      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255 , 25 , '' ] ,
       \ }
 
 " Insert
@@ -49,7 +49,7 @@ let s:I2 = [ '#ffffff' , '#005fff' , 15  , 39  ]
 let s:I3 = [ '#ffffff' , '#000080' , 15  , 26  ]
 let g:airline#themes#ohmystack#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 let g:airline#themes#ohmystack#palette.insert_modified = {
-      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 26      , ''     ] ,
       \ }
 let g:airline#themes#ohmystack#palette.insert_paste = {
       \ 'airline_a': [ s:I1[0]   , '#d78700' , s:I1[2] , 172     , ''     ] ,
@@ -66,7 +66,7 @@ let s:V2 = [ '#ffffff' , '#444444' , 255 , 240 ]
 let s:V3 = [ '#e1f4f5' , '#202020' , 245 , 237 ]
 let g:airline#themes#ohmystack#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#ohmystack#palette.visual_modified = {
-      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 25      , ''     ] ,
       \ }
 
 " Inactive
