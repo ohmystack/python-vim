@@ -270,3 +270,13 @@ let g:JSHintHighlightErrorLine = 0  " disable error highlighting
 " Remap to avoid <leader>r conflict with 'align' plugin
 nmap <unique> <silent> <Leader>mr <Plug>MarkRegex
 vmap <unique> <silent> <Leader>mr <Plug>MarkRegex
+
+" ====================
+" Damian-Conway-s-Vim-Setup plugins
+" vmath.vim
+vmap <silent><expr>  ++  VMATH_YankAndAnalyse()
+" dragvisuals.vim
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')
+vmap  <expr>  <S-UP>     DVB_Drag('up')
