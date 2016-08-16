@@ -259,3 +259,9 @@ command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)
 " ====================
 " jshint
 let g:JSHintHighlightErrorLine = 0  " disable error highlighting
+
+" ====================
+" mark (Mark--Karkat)
+" Remap to avoid <leader>r conflict with 'align' plugin
+nmap <unique> <silent> <Leader>mr <Plug>MarkRegex
+vmap <unique> <silent> <Leader>mr <Plug>MarkRegex
