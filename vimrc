@@ -52,6 +52,10 @@ set t_Co=256
 set encoding=utf-8
 set lazyredraw
 
+" Highlight the 80th char if the line is too long
+" If you want to change the highlight color, change the theme's 'ColorColumn'
+call matchadd('ColorColumn', '\%80v', 100)
+
 " Airline & Powerline settings
 let g:airline_powerline_fonts = 1
 "let g:Powerline_symbols = "fancy"
