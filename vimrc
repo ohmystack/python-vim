@@ -128,7 +128,7 @@ let g:syntastic_python_flake8_args = '--ignore="E111,E114,E501"'
 " let g:syntastic_warning_symbol = '!'
 
 " Syntastic for Go
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck', 'go']
 
 " ====================
 " ConqueTerm
@@ -212,17 +212,24 @@ set foldlevel=0
 
 " ====================
 " vim-go
+" tutorial: https://github.com/fatih/vim-go-tutorial
 let g:go_autodetect_gopath = 1
 let g:go_auto_type_info = 1
 let g:godef_split = 2
 
 let g:go_highlight_functions = 1
-"let g:go_highlight_methods = 1
+" let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_command = "goimports"  "auto import when saving
+
+" vim-go native checking
+" let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+" let g:go_metalinter_autosave = 1
+" let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
+" let g:go_metalinter_deadline = '5s'
 
 au FileType go nmap <leader>r <Plug>(go-run)
 "au FileType go nmap <leader>b <Plug>(go-build)
