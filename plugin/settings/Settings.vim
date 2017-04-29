@@ -18,7 +18,7 @@ set showmode
 set nobomb                            " no BOM(Byte Order Mark)
 set nostartofline
 set laststatus=2
-set clipboard+=unnamed
+" set clipboard+=unnamed                " sync vim clipboard with system clipboard
 set splitright                        " always open vertical split window in the right side
 set splitbelow                        " always open horizontal split window below
 set scrolloff=5                       " start scrolling when n lines away from margins
