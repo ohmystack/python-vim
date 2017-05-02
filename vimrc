@@ -78,9 +78,10 @@ let g:pymode_doc = 0
 let g:pymode_lint = 0
 " disable pep8 from checker
 let g:pymode_lint_checker = "pylint"
-
-" Disable Folding function from py-mode, use my own Folding configuration in Settings.vim
-"let g:pymode_folding = 0
+" disable 80 char column
+let g:pymode_options_colorcolumn = 0
+" use folding function from py-mode
+let g:pymode_folding = 1
 
 " Disable auto-remove unused whitespaces.
 let g:pymode_utils_whitespaces = 0
