@@ -72,7 +72,8 @@ colorscheme zenburn-colorful
 " Python-mode settings
 
 " Load show documentation plugin, 0=off 1=on
-let g:pymode_doc = 0
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
 
 " Turn off pymode-pylint
 let g:pymode_lint = 0
