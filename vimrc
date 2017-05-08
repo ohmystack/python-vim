@@ -261,6 +261,8 @@ nnoremap <Leader>d :YcmCompleter GoTo<CR>
 " nerdcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+" Fit for python-mode default 'commentstring'
+au FileType python let g:NERDSpaceDelims = 0
 
 " ====================
 " Bash settings
