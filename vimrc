@@ -69,6 +69,13 @@ let g:solarized_termcolors=256
 colorscheme zenburn-colorful
 
 " ====================
+" Python settings
+" NOTE: For TensorFlow
+au FileType python set shiftwidth=2
+au FileType python set softtabstop=2
+au FileType python setlocal textwidth=80
+
+" ====================
 " Python-mode settings
 
 " Load show documentation plugin, 0=off 1=on
@@ -118,9 +125,9 @@ let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
 let g:syntastic_python_checkers = ['flake8']
 " Warning / Error codes: https://pypi.python.org/pypi/flake8/1.2
-" NOTE: Ignore E111 & E114 & E501 is for TensorFlow, who uses only 2 spaces for indentation.
+" NOTE: Ignore E111 & E114 is for TensorFlow, who uses only 2 spaces for indentation.
 "       Remove these later.
-let g:syntastic_python_flake8_args = '--ignore="E111,E114,E501"'
+let g:syntastic_python_flake8_args = '--ignore="E111,E114" --max-line-length=80'
 
 " Use jshint (uses ~/.jshintrc)
 " let g:syntastic_javascript_checkers = ['jshint']
