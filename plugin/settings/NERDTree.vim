@@ -11,4 +11,4 @@ map <leader>r :NERDTreeFind<cr>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=30
-let NERDTreeIgnore=['\.pyc$']
+let NERDTreeIgnore=['\.pyc$', '^__pycache__$[[dir]]']
