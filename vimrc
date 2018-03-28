@@ -24,7 +24,6 @@ elseif has('unix')
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     " settings for MacOSX
-    python import sys; sys.path.append("/Library/Python/2.7/site-packages")
   else
     " settings for linux
   endif
