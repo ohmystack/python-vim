@@ -89,6 +89,8 @@ let g:pymode_lint_checker = "pylint"
 let g:pymode_options_colorcolumn = 0
 " use folding function from py-mode
 let g:pymode_folding = 1
+" Enable automatic virtualenv detection
+let g:pymode_virtualenv = 1
 
 " Disable auto-remove unused whitespaces.
 let g:pymode_utils_whitespaces = 0
