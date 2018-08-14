@@ -118,6 +118,8 @@ let g:pymode_rope = 0
 let g:ropevim_enable_autoimport=1
 " add the name of modules you want to autoimport
 let g:ropevim_autoimport_modules = ["os", "django"]
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
 
 " ====================
 " Syntastic
