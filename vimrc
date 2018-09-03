@@ -50,6 +50,7 @@ set synmaxcol=250                     " give up syntax highlighting after that c
 set t_Co=256
 set encoding=utf-8
 set lazyredraw
+set maxmempattern=2000
 
 " Highlight the 81th char if the line is too long
 " If you want to change the highlight color, change the theme's 'ColorColumn'
