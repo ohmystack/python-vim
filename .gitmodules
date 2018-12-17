@@ -58,3 +58,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/vim-jsonnet"]
+	path = bundle/vim-jsonnet
+	url = https://github.com/google/vim-jsonnet.git
