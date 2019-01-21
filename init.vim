@@ -1,1 +1,1 @@
-/Users/ohmystack/.vimrc
+../.vimrc
