@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'jedi-vim', 'jshint']
+let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'jedi-vim', 'jshint', 'YouCompleteMe']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -306,3 +306,20 @@ vmap  <expr>  <S-LEFT>   DVB_Drag('left')
 vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
 vmap  <expr>  <S-DOWN>   DVB_Drag('down')
 vmap  <expr>  <S-UP>     DVB_Drag('up')
+
+" ====================
+" LanguageClient-neovim
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ }
+
+function LC_maps()
+  if has_key(g:LanguageClient_serverCommands, &filetype)
+    nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<CR>
+    nnoremap <buffer> <silent> <leader>d :call LanguageClient#textDocument_definition()<CR>
+    " Disable linting, use Syntastic instead
+    let g:LanguageClient_diagnosticsEnable = 0
+  endif
+endfunction
+
+autocmd FileType * call LC_maps()

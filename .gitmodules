@@ -61,3 +61,6 @@
 [submodule "bundle/vim-jsonnet"]
 	path = bundle/vim-jsonnet
 	url = https://github.com/google/vim-jsonnet.git
+[submodule "bundle/LanguageClient-neovim"]
+	path = bundle/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim.git
