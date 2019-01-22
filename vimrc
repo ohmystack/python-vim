@@ -51,6 +51,7 @@ set t_Co=256
 set encoding=utf-8
 set lazyredraw
 set maxmempattern=2000
+set guicursor=                        " disable guicursor for neovim
 
 " Highlight the 81th char if the line is too long
 " If you want to change the highlight color, change the theme's 'ColorColumn'
