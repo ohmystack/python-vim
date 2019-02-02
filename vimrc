@@ -6,7 +6,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['snipmate', 'pyflakes-vim', 'taglist.vim', 'vim-powerline', 'ropevim', 'jedi-vim', 'jshint', 'YouCompleteMe']
+let g:pathogen_disabled = ['YouCompleteMe']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -97,9 +97,6 @@ let g:pymode_virtualenv = 1
 " Disable auto-remove unused whitespaces.
 let g:pymode_utils_whitespaces = 0
 
-" pyflakes
-"autocmd FileType python map <buffer> <c-F7> :call Flake8()<CR>
-
 " Unload run code plugin
 let g:pymode_run = 0
 
@@ -133,9 +130,6 @@ let g:syntastic_python_checkers = ['flake8']
 " NOTE: Ignore E111 & E114 is for TensorFlow, who uses only 2 spaces for indentation.
 "       Remove these later.
 let g:syntastic_python_flake8_args = '--ignore="E111,E114" --max-line-length=80'
-
-" Use jshint (uses ~/.jshintrc)
-" let g:syntastic_javascript_checkers = ['jshint']
 
 " Better :sign interface symbols
 " let g:syntastic_error_symbol = '✗'
@@ -287,10 +281,6 @@ au FileType sh set noexpandtab
 " http://vim.wikia.com/wiki/VimTip1592
 command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
 command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
-
-" ====================
-" jshint
-let g:JSHintHighlightErrorLine = 0  " disable error highlighting
 
 " ====================
 " mark (Mark--Karkat)
