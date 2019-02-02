@@ -1,6 +1,9 @@
-" My currently working version Vimrc
-" I kept all other settings in plugins/settings directory
-"
+" URL: https://github.com/ohmystack/python-vim
+" Authors: ohmystack (jiangjun1990@gmail.com)
+" Description: A beautiful and efficient vim config.
+"              Support for these languages very well: Python, Golang.
+"              Besides this vimrc file, some other settings are placed at:
+"              plugin/settings/Settings.vim
 
 " Pathogen load
 filetype off
