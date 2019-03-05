@@ -61,3 +61,6 @@
 [submodule "bundle/LanguageClient-neovim"]
 	path = bundle/LanguageClient-neovim
 	url = https://github.com/autozimu/LanguageClient-neovim.git
+[submodule "bundle/vim-ft-bzl"]
+	path = bundle/vim-ft-bzl
+	url = https://github.com/bazelbuild/vim-ft-bzl.git
