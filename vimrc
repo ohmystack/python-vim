@@ -304,7 +304,7 @@ vmap  <expr>  <S-UP>     DVB_Drag('up')
 " ====================
 " LanguageClient-neovim
 let g:LanguageClient_serverCommands = {
-    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'python': ['pyls'],
     \ }
 
 function LC_maps()
