@@ -49,7 +49,7 @@ nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
-set synmaxcol=250                     " give up syntax highlighting after that col
+set synmaxcol=2500                    " give up syntax highlighting after that col
 set t_Co=256
 set encoding=utf-8
 set lazyredraw
