@@ -225,7 +225,7 @@ set foldlevel=0
 " vim-go
 " tutorial: https://github.com/fatih/vim-go-tutorial
 let g:go_autodetect_gopath = 1
-let g:go_auto_type_info = 1
+let g:go_auto_type_info = 0
 let g:godef_split = 2
 let g:go_echo_command_info = 0
 
