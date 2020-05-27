@@ -132,7 +132,7 @@ let g:syntastic_python_checkers = ['flake8']
 " Warning / Error codes: https://pypi.python.org/pypi/flake8/1.2
 " NOTE: Ignore E111 & E114 is for TensorFlow, who uses only 2 spaces for indentation.
 "       Remove these later.
-let g:syntastic_python_flake8_args = '--ignore="E111,E114" --max-line-length=80'
+let g:syntastic_python_flake8_args = '--ignore="E111,E114,W503" --max-line-length=80'
 
 " Better :sign interface symbols
 " let g:syntastic_error_symbol = '✗'
