@@ -128,7 +128,9 @@ let g:pymode_rope_complete_on_dot = 0
 " When set to 1 the cursor will always jump to the first issue detected.
 let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checkers = ['pylint', 'python']
+" pylint disable warnings
+let g:syntastic_python_pylint_args = '--disable=W,R,missing-docstring'
 " Warning / Error codes: https://pypi.python.org/pypi/flake8/1.2
 " NOTE: Ignore E111 & E114 is for TensorFlow, who uses only 2 spaces for indentation.
 "       Remove these later.
