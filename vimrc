@@ -139,7 +139,10 @@ let g:syntastic_python_flake8_args = '--ignore="E111,E114,W503" --max-line-lengt
 " let g:syntastic_warning_symbol = '!'
 
 " Syntastic for Go
-let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'golangci-lint']
+let g:syntastic_go_gometalinter_args = ['--disable-all', '--enable=errcheck']
+
+" let syntastic_debug=33
 
 " ====================
 " ConqueTerm
@@ -230,18 +233,15 @@ let g:godef_split = 2
 let g:go_echo_command_info = 0
 
 let g:go_highlight_functions = 1
-" let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_command = "goimports"  "auto import when saving
+let g:go_fmt_fail_silently = 1
 
-" vim-go native checking
-" let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-" let g:go_metalinter_autosave = 1
-" let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
-" let g:go_metalinter_deadline = '5s'
+" vim-go debug
+" let g:go_debug = ['lsp', 'shell-commands']
 
 au FileType go nmap <leader>r <Plug>(go-run)
 "au FileType go nmap <leader>b <Plug>(go-build)
