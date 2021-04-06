@@ -130,7 +130,7 @@ let g:syntastic_auto_loc_list = 0
 " Select my syntastic checker
 let g:syntastic_python_checkers = ['pylint', 'python']
 " pylint disable warnings
-let g:syntastic_python_pylint_args = '--disable=W,R,missing-docstring'
+let g:syntastic_python_pylint_args = '--disable=C,W,R,missing-docstring --enable=line-too-long'
 " Warning / Error codes: https://pypi.python.org/pypi/flake8/1.2
 " NOTE: Ignore E111 & E114 is for TensorFlow, who uses only 2 spaces for indentation.
 "       Remove these later.
