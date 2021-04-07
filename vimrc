@@ -74,9 +74,8 @@ colorscheme zenburn-colorful
 
 " ====================
 " Python settings
-" NOTE: For TensorFlow
-au FileType python set shiftwidth=2
-au FileType python set softtabstop=2
+au FileType python set shiftwidth=4
+au FileType python set softtabstop=4
 au FileType python setlocal textwidth=80
 
 " ====================
