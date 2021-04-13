@@ -72,6 +72,31 @@ let g:solarized_termcolors=256
 "set background=light
 colorscheme zenburn-colorful
 
+" Terminal settings
+if has('nvim')
+  tnoremap <Esc> <Esc>
+  " Terminal mode:
+  tnoremap <c-h> <c-\><c-n><c-w>h
+  tnoremap <c-j> <c-\><c-n><c-w>j
+  tnoremap <c-k> <c-\><c-n><c-w>k
+  tnoremap <c-l> <c-\><c-n><c-w>l
+  " Insert mode:
+  inoremap <c-h> <Esc><c-w>h
+  inoremap <c-j> <Esc><c-w>j
+  inoremap <c-k> <Esc><c-w>k
+  inoremap <c-l> <Esc><c-w>l
+  " Visual mode:
+  vnoremap <c-h> <Esc><c-w>h
+  vnoremap <c-j> <Esc><c-w>j
+  vnoremap <c-k> <Esc><c-w>k
+  vnoremap <c-l> <Esc><c-w>l
+  " Normal mode:
+  nnoremap <c-h> <c-w>h
+  nnoremap <c-j> <c-w>j
+  nnoremap <c-k> <c-w>k
+  nnoremap <c-l> <c-w>l
+endif
+
 " ====================
 " Python settings
 au FileType python set shiftwidth=4
