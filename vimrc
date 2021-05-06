@@ -56,11 +56,6 @@ set lazyredraw
 set maxmempattern=2000
 set guicursor=                        " disable guicursor for neovim
 
-" Highlight the 81th char if the line is too long
-" If you want to change the highlight color, change the theme's 'ColorColumn'
-" Only for: markdown
-autocmd FileType mkd call matchadd('ColorColumn', '\%81v', 100)
-
 " Airline & Powerline settings
 let g:airline_powerline_fonts = 1
 "let g:Powerline_symbols = "fancy"
