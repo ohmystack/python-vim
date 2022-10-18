@@ -9,7 +9,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['YouCompleteMe', 'supertab', 'python-mode']
+let g:pathogen_disabled = ['YouCompleteMe', 'supertab', 'python-mode', 'syntastic']
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -452,9 +452,9 @@ vmap  <expr>  <S-UP>     DVB_Drag('up')
 
 " ====================
 " LanguageClient-neovim
-let g:LanguageClient_serverCommands = {
-    \ 'python': ['pyls'],
-    \ }
+" let g:LanguageClient_serverCommands = {
+"     \ 'python': ['pyls'],
+"     \ }
 
 function LC_maps()
   if has_key(g:LanguageClient_serverCommands, &filetype)
@@ -466,3 +466,13 @@ function LC_maps()
 endfunction
 
 autocmd FileType * call LC_maps()
+
+" ====================
+" ALE
+" :help ale-python-options
+let g:ale_sign_error = '😡'
+let g:ale_sign_warning = '⚠️'
+let g:ale_echo_msg_format = '[%linter% %severity% %code%] %s'
+" ALE - python
+let g:ale_python_pylint_options = '--disable=C,W,R --disable=method-hidden,no-member'
+autocmd Filetype python let b:ale_disable_lsp = 1
