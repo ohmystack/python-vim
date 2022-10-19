@@ -1,4 +1,24 @@
 {
+  // If enable ALE
+  // "diagnostic.displayByAle": true,
+
+  // coc-pyright
+  // https://github.com/fannheyward/coc-pyright/blob/master/package.json
+  "diagnostic.showUnused": false,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "python.analysis.typeCheckingMode": "off",
+  "pyright.disableDiagnostics": false, // Use ALE
+  "python.linting.pylintEnabled": true, // Use ALE
+  "python.analysis.diagnosticSeverityOverrides": {
+    // "reportMissingImports": "none"
+  },
+  "python.linting.pylintArgs": [
+    "--disable=C,W,R",
+    "--disable=method-hidden,no-member"
+  ],
+  "python.linting.mypyEnabled": true,
+
   "languageserver": {
     "ccls": {
       "command": "ccls",

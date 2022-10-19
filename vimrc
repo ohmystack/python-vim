@@ -9,7 +9,7 @@
 filetype off
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['YouCompleteMe', 'supertab', 'python-mode', 'syntastic']
+let g:pathogen_disabled = ['YouCompleteMe', 'supertab', 'python-mode', 'syntastic', 'ale']
 
 call pathogen#infect()
 call pathogen#helptags()
