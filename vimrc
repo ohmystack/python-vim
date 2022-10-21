@@ -330,6 +330,7 @@ nnoremap <silent> <leader>e :<C-u>call ToggleErrors()<CR>
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
 
+let g:tagbar_position = 'rightbelow vertical'
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
