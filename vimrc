@@ -55,6 +55,7 @@ set encoding=utf-8
 set lazyredraw
 set maxmempattern=2000
 set guicursor=                        " disable guicursor for neovim
+set mouse=
 
 " Airline & Powerline settings
 let g:airline_powerline_fonts = 1
