@@ -79,3 +79,6 @@
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "bundle/nvim-treesitter"]
+	path = bundle/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
