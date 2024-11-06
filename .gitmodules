@@ -82,3 +82,6 @@
 [submodule "bundle/nvim-treesitter"]
 	path = bundle/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
