@@ -1,9 +1,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
@@ -76,9 +73,6 @@
 [submodule "bundle/fzf"]
 	path = bundle/fzf
 	url = https://github.com/junegunn/fzf.git
-[submodule "bundle/SimpylFold"]
-	path = bundle/SimpylFold
-	url = https://github.com/tmhedberg/SimpylFold.git
 [submodule "bundle/nvim-treesitter"]
 	path = bundle/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
