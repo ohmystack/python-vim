@@ -67,6 +67,8 @@ let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 "set background=light
 colorscheme zenburn-colorful
+" For nvim > v0.10, support the old vim colors file
+set notermguicolors
 
 " ====================
 " Coc settings
