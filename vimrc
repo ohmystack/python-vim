@@ -482,3 +482,10 @@ let g:ale_echo_msg_format = '[%linter% %severity% %code%] %s'
 " ALE - python
 let g:ale_python_pylint_options = '--disable=C,W,R --disable=method-hidden,no-member'
 autocmd Filetype python let b:ale_disable_lsp = 1
+
+" ==========================================================
+" Neovim lua init (Keep this always at the bottom of vimrc!)
+" ==========================================================
+if has('lua')
+  lua require('init')
+endif
