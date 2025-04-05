@@ -1,6 +1,5 @@
 " shortcuts mapping
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gp :Git push<CR>
+nnoremap <silent> <leader>gs :Git status<CR>
+nnoremap <silent> <leader>gd :Git diff<CR>
+nnoremap <silent> <leader>gl :Git log<CR>
+nnoremap <silent> <leader>gb :Git blame<CR>
