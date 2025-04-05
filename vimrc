@@ -41,8 +41,6 @@ autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 " select ALL
 map <C-A> ggVG
 
-nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-
 " Add external paths into ctags
 " set tags+=/usr/local/lib/python2.7/dist-packages/tags
 
