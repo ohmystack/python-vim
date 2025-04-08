@@ -481,6 +481,18 @@ let g:ale_echo_msg_format = '[%linter% %severity% %code%] %s'
 let g:ale_python_pylint_options = '--disable=C,W,R --disable=method-hidden,no-member'
 autocmd Filetype python let b:ale_disable_lsp = 1
 
+call plug#begin()
+
+" List your plugins here
+Plug 'nvim-lualine/lualine.nvim'
+
+call plug#end()
+
+lua <<END
+require('lualine').setup {
+  options = { theme = 'powerline' }
+}
+END
 " ==========================================================
 " Neovim lua init (Keep this always at the bottom of vimrc!)
 " ==========================================================
